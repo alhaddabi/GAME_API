@@ -1,0 +1,209 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Buttons - Submit, Delete, Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg, #ffffff, #e6e6e6);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-container button {
+            width: 120px;
+            background-color: #4CAF50;
+        }
+
+        .button-container button.delete {
+            background-color: #f44336;
+        }
+
+        .button-container button.update {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+<body> -->
+
+    <!-- <form>
+        <label for="textbox1"> <b>Player ID: </b></label>
+        <input type="text" id="PlayerID" name="PlayerID" placeholder="Type Player ID here">
+
+        <label for="textbox2"> <b>Player Name: </b></label>
+        <input type="text" id="PlayerName" name="PlayerName" placeholder="Type Player Name here">
+
+        <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="button" class="delete" onclick="deleteData()">Delete</button>
+            <button type="button" class="update" onclick="updateData()">Update</button>
+            <div id="player-cards" class="row"></div>
+        </div>
+    </form>
+
+    <script>
+        function deleteData() {
+            // Add your delete logic here
+            alert('Data deleted!');
+        }
+
+        function updateData() {
+            // Add your update logic here
+            alert('Data updated!');
+        }
+    </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buttons - Submit, Delete, Update</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg, #ffffff, #e6e6e6);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-container button {
+            width: 120px;
+            background-color: #4CAF50;
+        }
+
+        .button-container button.delete {
+            background-color: #f44336;
+        }
+
+        .button-container button.update {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="textbox1"> <b>Player ID: </b></label>
+        <input type="text" id="PlayerID" name="PlayerID" placeholder="Type Player ID here">
+
+        <label for="textbox2"> <b>Player Name: </b></label>
+        <input type="text" id="PlayerName" name="PlayerName" placeholder="Type Player Name here">
+
+        <div class="button-container">
+            <button type="button" onclick="submitData()" style="background-color: green; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+ 
+        </body>
+
+        </div>
+    </form>
+
+    <div id="player-cards-container" class="button-container">
+        <!-- Player cards will be displayed here -->
+
+    </div>
+    <script src="dataFettcher.js"></script>
+</body>
+</html>
